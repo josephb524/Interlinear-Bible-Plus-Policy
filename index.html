@@ -58,7 +58,7 @@
   </head>
   <body>
       <h1>Privacy Policy for Interlinear Bible Plus</h1>
-      <p class="last-updated">Last Updated: July 9 2026</p>
+      <p class="last-updated">Last Updated: November 10, 2026</p>
 
       <p>Interlinear Bible Plus ("we," "our," or "the app") values your privacy. This Privacy Policy explains how we handle information when you use the app on Apple (iOS) and Android devices.</p>
 
@@ -69,7 +69,8 @@
       <ul>
           <li>When you subscribe, the platform store you purchased from — Apple's App Store (via StoreKit) or Google Play (via Google Play Billing) — processes payment and shares transaction and subscription status with the app.</li>
           <li>This includes subscription status, expiration dates, and renewal information.</li>
-          <li>To verify your subscription and manage daily usage limits for the Bible Chat feature, an anonymous, store-signed transaction record (an Apple-signed receipt on iOS, or a Google Play–signed purchase record on Android) is sent to our backend servers.</li>
+          <li>To verify your subscription and manage daily usage limits for the Bible Chat feature, a store-signed transaction record (an Apple-signed receipt on iOS, or a Google Play–signed purchase record on Android) is sent to our backend servers.</li>
+          <li>To enforce the daily limit, our server keeps that subscription's transaction identifier together with the number of questions asked that day, for up to 2 days. It is never combined with your name, email, Apple ID or Google account, which we do not receive.</li>
           <li>We do not process, store, or have access to your payment details, name, Apple ID, or Google account; Apple and Google handle all transactions.</li>
       </ul>
 
@@ -87,12 +88,19 @@
           <li><strong>Interaction data:</strong> whether you’ve dismissed review or support prompts, and when.</li>
       </ul>
 
+      <h3>D. Anonymous Usage Counts (Sent to Our Server)</h3>
+      <ul>
+          <li>To understand how the Bible Chat subscription screen and our in-app banners perform, the app sends simple event counts to our own server (hosted on Cloudflare): when the subscription screen is shown or closed, which plan was tapped, and whether a purchase was completed, cancelled, pending, failed or restored; and when a banner for one of our other apps is shown, tapped or dismissed.</li>
+          <li>These events carry no account, name, device identifier or chat content. Our server keeps only totals per day. To count unique devices each day, it stores a one-way hash of the IP address, the app's network signature (user agent) and the date; the hash changes every day and is deleted after that day. The IP address itself is never stored.</li>
+      </ul>
+
       <h2>2. How We Use Your Information</h2>
       <ul>
           <li>Process and verify subscriptions through Apple’s StoreKit or Google Play Billing and our backend infrastructure.</li>
           <li>Provide and improve app features, specifically generating AI responses for the Bible Chat.</li>
           <li>Personalize your experience based on preferences (handled locally).</li>
           <li>Show review/support prompts based on engagement (handled locally).</li>
+          <li>Measure how the subscription screen and in-app banners perform, using the anonymous counts described in section 1D.</li>
           <li>Comply with legal obligations.</li>
       </ul>
 
@@ -100,7 +108,7 @@
       <ul>
           <li>All personal data (preferences, highlights, bookmarks, notes, and chat history) is stored locally on your device using the device’s local storage.</li>
           <li>Chat queries are transmitted securely via HTTPS to our servers solely for real-time processing and are not retained or stored.</li>
-          <li>Subscription verification data is processed securely on our servers but remains anonymous and is completely decoupled from your personal identity.</li>
+          <li>Subscription verification data is processed securely on our servers. The only part we keep is the transaction identifier with that day's question count (see section 1A), and it is never combined with your name, email, Apple ID or Google account.</li>
           <li>We do not have access to your Apple ID, Google account, email, or payment information.</li>
       </ul>
 
@@ -109,8 +117,8 @@
           <li>We do not sell, rent, or share your information with third parties for marketing or advertising purposes.</li>
           <li><strong>Apple &amp; Google:</strong> Handle all subscription transactions on their respective platforms (the App Store and Google Play); their privacy policies apply.</li>
           <li><strong>AI Providers:</strong> We use third-party AI services (such as Fireworks AI) via our Cloudflare infrastructure to process Bible Chat queries. The data sent is limited to the chat context needed to generate a response and is not used by these providers to train their AI models.</li>
-          <li>We do not use third-party analytics, advertising networks, or tracking services.</li>needed to generate a response and is not used by these providers to train their AI models.</li>
-        <li>We do not use third-party analytics, advertising networks, or tracking services.</li>
+          <li><strong>Cloudflare:</strong> Hosts our servers for subscription verification, daily usage limits and the anonymous usage counts.</li>
+          <li>We do not use third-party analytics, advertising networks, or tracking services. The usage counts in section 1D go only to our own server.</li>
     </ul>
 
     <h2>5. Your Rights and Choices</h2>
@@ -145,12 +153,14 @@
     <ul>
         <li>Local data (preferences, highlights, bookmarks, chat history) remains on your device until you delete the app or manually remove the data.</li>
         <li>Subscription status is maintained by Apple or Google, and the app only accesses your current status.</li>
+        <li>Daily question counts, with the subscription's transaction identifier, are deleted from our server after 2 days.</li>
+        <li>Anonymous usage counts are kept as daily totals; the daily unique-device hashes are deleted after each day.</li>
     </ul>
 
     <h2>10. No Personal Identification Required</h2>
     <ul>
         <li>The app does not require you to create an account or provide an email address, name, or other personal identifiers.</li>
-        <li>All functionality is available without providing personal information, beyond the anonymous subscription receipt that Apple or Google shares for subscription management.</li>
+        <li>All functionality is available without providing personal information, beyond the subscription record that Apple or Google shares for subscription management.</li>
     </ul>
 
     <p class="footer-note"><em>By using Interlinear Bible Plus, you acknowledge you have read and understood this Privacy Policy.</em></p>
