@@ -58,7 +58,7 @@
   </head>
   <body>
       <h1>Privacy Policy for Interlinear Bible Plus</h1>
-      <p class="last-updated">Last Updated: November 10, 2026</p>
+      <p class="last-updated">Last Updated: November 21, 2026</p>
 
       <p>Interlinear Bible Plus ("we," "our," or "the app") values your privacy. This Privacy Policy explains how we handle information when you use the app on Apple (iOS) and Android devices.</p>
 
@@ -72,6 +72,7 @@
           <li>To verify your subscription and manage daily usage limits for the Bible Chat feature, a store-signed transaction record (an Apple-signed receipt on iOS, or a Google Play–signed purchase record on Android) is sent to our backend servers.</li>
           <li>To enforce the daily limit, our server keeps that subscription's transaction identifier together with the number of questions asked that day, for up to 2 days. It is never combined with your name, email, Apple ID or Google account, which we do not receive.</li>
           <li>We do not process, store, or have access to your payment details, name, Apple ID, or Google account; Apple and Google handle all transactions.</li>
+          <li><strong>Remove Ads (Android):</strong> a one-time purchase handled entirely by Google Play. The app checks with Google Play on your device whether you own it; this purchase is not sent to our servers.</li>
       </ul>
 
       <h3>B. Bible Chat Data</h3>
@@ -92,6 +93,16 @@
       <ul>
           <li>To understand how the Bible Chat subscription screen and our in-app banners perform, the app sends simple event counts to our own server (hosted on Cloudflare): when the subscription screen is shown or closed, which plan was tapped, and whether a purchase was completed, cancelled, pending, failed or restored; and when a banner for one of our other apps is shown, tapped or dismissed.</li>
           <li>These events carry no account, name, device identifier or chat content. Our server keeps only totals per day. To count unique devices each day, it stores a one-way hash of the IP address, the app's network signature (user agent) and the date; the hash changes every day and is deleted after that day. The IP address itself is never stored.</li>
+          <li>Banners for our other apps are not shown to Bible Chat subscribers or, on Android, to people who bought Remove Ads.</li>
+      </ul>
+
+      <h3>E. Advertising (Android App Only)</h3>
+      <ul>
+          <li>The Android app shows ads from Google AdMob in a banner at the bottom of the Interlinear, Bible and Dictionary screens. It shows no ads to Bible Chat subscribers or to people who bought Remove Ads. The iOS app shows no ads.</li>
+          <li>To show ads, measure them and prevent fraud, Google's Mobile Ads SDK collects and shares with Google: your device's IP address (which may be used to estimate its general location), device identifiers (the Android advertising ID and app set ID), interactions with the app and its ads (such as app launches, ad views and taps), and diagnostic information about the app's performance. This data is encrypted in transit.</li>
+          <li>The app asks Google only for ads suitable for general audiences. In Brazil, ads are not based on your activity.</li>
+          <li>In the European Economic Area, the United Kingdom and Switzerland, the app shows Google's consent message before showing ads, so you can choose how your data is used for advertising. There, and in US states with privacy laws, you can change your choice, or opt out of the sale or sharing of your data, at any time in Settings &rarr; Purchases &rarr; Privacy Choices.</li>
+          <li>Google's use of this data is described in <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a> and in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
       </ul>
 
       <h2>2. How We Use Your Information</h2>
@@ -101,6 +112,7 @@
           <li>Personalize your experience based on preferences (handled locally).</li>
           <li>Show review/support prompts based on engagement (handled locally).</li>
           <li>Measure how the subscription screen and in-app banners perform, using the anonymous counts described in section 1D.</li>
+          <li>Show ads in the Android app through Google AdMob, as described in section 1E, unless you subscribe to Bible Chat or buy Remove Ads.</li>
           <li>Comply with legal obligations.</li>
       </ul>
 
@@ -114,11 +126,12 @@
 
       <h2>4. Data Sharing and Third Parties</h2>
       <ul>
-          <li>We do not sell, rent, or share your information with third parties for marketing or advertising purposes.</li>
+          <li>We do not sell or rent your information. Apart from the advertising data that Google collects in the Android app (section 1E), we do not share your information with third parties for marketing or advertising purposes.</li>
+          <li><strong>Google AdMob (Android only):</strong> Serves the ads in the Android app and collects the data described in section 1E; Google's privacy policy applies.</li>
           <li><strong>Apple &amp; Google:</strong> Handle all subscription transactions on their respective platforms (the App Store and Google Play); their privacy policies apply.</li>
           <li><strong>AI Providers:</strong> We use third-party AI services (such as Fireworks AI) via our Cloudflare infrastructure to process Bible Chat queries. The data sent is limited to the chat context needed to generate a response and is not used by these providers to train their AI models.</li>
           <li><strong>Cloudflare:</strong> Hosts our servers for subscription verification, daily usage limits and the anonymous usage counts.</li>
-          <li>We do not use third-party analytics, advertising networks, or tracking services. The usage counts in section 1D go only to our own server.</li>
+          <li>Apart from Google AdMob in the Android app, we do not use third-party analytics, advertising networks, or tracking services. The usage counts in section 1D go only to our own server.</li>
     </ul>
 
     <h2>5. Your Rights and Choices</h2>
@@ -126,6 +139,7 @@
         <li><strong>Delete data:</strong> Delete the app from your device to instantly remove all local data, including your chat history, highlights, and preferences.</li>
         <li><strong>Manage subscriptions:</strong> Use your device settings — the App Store on iOS or Google Play on Android — to manage, cancel, or restore active subscriptions.</li>
         <li><strong>Preferences:</strong> Adjust app settings at any time within the app.</li>
+        <li><strong>Ads (Android):</strong> Buy Remove Ads or subscribe to Bible Chat to turn ads off. Where the law requires a consent choice, change it in Settings &rarr; Purchases &rarr; Privacy Choices. You can reset or delete your advertising ID in your device's Android settings.</li>
     </ul>
 
     <h2>6. Children’s Privacy</h2>
@@ -155,12 +169,13 @@
         <li>Subscription status is maintained by Apple or Google, and the app only accesses your current status.</li>
         <li>Daily question counts, with the subscription's transaction identifier, are deleted from our server after 2 days.</li>
         <li>Anonymous usage counts are kept as daily totals; the daily unique-device hashes are deleted after each day.</li>
+        <li>Data that Google collects to show ads in the Android app is kept according to Google's own policies.</li>
     </ul>
 
     <h2>10. No Personal Identification Required</h2>
     <ul>
         <li>The app does not require you to create an account or provide an email address, name, or other personal identifiers.</li>
-        <li>All functionality is available without providing personal information, beyond the subscription record that Apple or Google shares for subscription management.</li>
+        <li>All functionality is available without providing personal information, beyond the subscription record that Apple or Google shares for subscription management and, in the Android app, the advertising data described in section 1E.</li>
     </ul>
 
     <p class="footer-note"><em>By using Interlinear Bible Plus, you acknowledge you have read and understood this Privacy Policy.</em></p>
